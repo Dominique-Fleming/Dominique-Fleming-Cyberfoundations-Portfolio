@@ -177,7 +177,7 @@ I think shift-log.txt took the longest because I thought they would all be in "r
 Compare how you felt starting this lab to how you felt at the very start of Lesson 3A, looking at a blank blinking cursor for the first time. What changed?
 
 ```
-I felt much more confident about this lab to be honest. Not that I didn't look at my notes I had but that I remembered what I was looking for as far as a command and needed the notes to verify I was right or on the right path. In Lesson 3A I was so worried and kind of freaked out by it. I'm kind of surprised at myself and ow I went thru this smoothly.
+I felt much more confident about this lab to be honest. Not that I didn't look at my notes I had but that I remembered what I was looking for as far as a command and needed the notes to verify I was right or on the right path. In Lesson 3A I was so worried and kind of freaked out by it. I'm kind of surprised at myself and how I went thru this smoothly.
 ```
 
 ### Analysis Question 3
