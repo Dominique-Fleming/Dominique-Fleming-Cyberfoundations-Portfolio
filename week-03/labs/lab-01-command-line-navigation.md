@@ -187,7 +187,7 @@ Basically it is looking for things that are similar or have a pattern if there a
 Look at the path `pwd` (or `Get-Location`) printed in Part A, Step 1. Is it written in Windows style or Linux style, and how do you know? Reference at least one specific detail from Lesson 2 (a drive letter, a slash direction, or the presence of a ~) to support your answer.
 
 ```
-"pwd" in Part A Step 1 is in Windows style because it ignores the strict rules about capitalization.Linux is very strict on capitalization because it means 2 different things is a letter is lowercase or capitalized. Also you could tell there is no need for "~" which would have not been an issue but its just a clear difference to me.
+The path that the command "pwd" shows is written in Linux. I know because it doesn't have a root starting with letters; just starting with "/" which is the one and only root for Linux. Also unlike the Windows(BASH) Linux(Powershell) doesnt have random symbols in its pathway (IE-(BASH) /home/morgan$)). Linux path was simply "/home/morgan/.SO to sum it up Powershell has no letter to start its pathway, uses "/" and no additional symbols in the pathway.
 ```
 
 ### Analysis Question 2
@@ -211,7 +211,7 @@ In Part C using the "man _" command to help me look up what I have never used be
 Compare this lab to Lesson 1's filing-room analogy (the pile of paper vs. the labeled cabinets). Now that you've actually navigated a file-system tree yourself instead of just reading about one, what — if anything — surprised you or felt different from what you expected?
 
 ```
-I think that it surprised me on how the pathways continued to show my travel into the subfolders that kept branching off. Also, how the system told me that the path I was on did not contain what I thought it did(because I didn't check before I moved lo
+I think that it surprised me on how the pathways continued to show my travel into the subfolders that kept branching off. Also, how the system told me that the path I was on did not contain what I thought it did(because I didn't check before I moved locations once or twice). I can see why it is important to move then check before moving on again. 
 ```
 
 ---
@@ -258,10 +258,6 @@ If you'd like to add one, take a screenshot showing your commands and their outp
 4. Click on the uploaded image's filename to open it — you'll see the image itself displayed on the page.
 5. Right-click directly on the image and choose **Copy image address** (Chrome/Edge) or **Copy Image Link** (Firefox).
 6. Come back to this file, open the pencil (edit) icon, and add the embed near the bottom of Part B, pasting your copied link in place of the placeholder:
-
-```markdown
-![CLI Simulator session screenshot](paste your copied image link here)
-```
 
 **If right-click doesn't show that option** (e.g., on some trackpads or tablets): click the small download-arrow icon in the top-right of the image preview instead, then copy the URL from your browser's address bar.
 
