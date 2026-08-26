@@ -437,7 +437,7 @@ Submit this lab exactly like the three core labs — through the **CyberFoundati
 The screenshot filename you uploaded:
 
 ```
-(type the filename here, e.g. stretch-real-traceroute.png)
+stretch-real-traceroute.png
 ```
 
 Your screenshot lives in `assets/screenshots/week-05/` in your repository. It does not need to be linked inside this worksheet.
