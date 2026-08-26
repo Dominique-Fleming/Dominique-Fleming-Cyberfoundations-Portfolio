@@ -386,13 +386,13 @@ This lab's written answers are submitted through the **CyberFoundations Lab Port
 The filename of your DNS screenshot:
 
 ```
-(type the filename here, e.g. packet-dns-query.png)
+packet-dns-query.png
 ```
 
 The filename of your packet 14 screenshot:
 
 ```
-(type the filename here, e.g. packet-http-plaintext.png)
+packet-http-plaintext.png
 ```
 
 Both screenshots live in `assets/screenshots/week-05/` in your repository. They do not need to be linked inside this worksheet.
