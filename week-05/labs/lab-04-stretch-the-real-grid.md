@@ -330,7 +330,7 @@ Where a private local address like `192.168.1.14` is fine to publish (it means n
 What you changed in your typed answers, if anything:
 
 ```
-the IPv6 address on hop 1
+the IPv6 address on hop 1 and on question 3
 ```
 
 ### Step 4 — Pre-Flight Checklist
