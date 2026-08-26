@@ -90,7 +90,7 @@ What your real output has that the simulator's didn't — list what you see:
 Ethernet adapter Ethernet 2:
 
    Connection-specific DNS Suffix  . :
-   Link-local IPv6 Address . . . . . : fe80::8a6d:dbee:619c:204c%17
+   Link-local IPv6 Address . . . . . : *****
    IPv4 Address. . . . . . . . . . . : 192.168.56.1
    Subnet Mask . . . . . . . . . . . : 255.255.255.0
    Default Gateway . . . . . . . . . :
@@ -108,9 +108,9 @@ Wireless LAN adapter Local Area Connection* 2:
 Wireless LAN adapter Wi-Fi:
 
    Connection-specific DNS Suffix  . : mynetworksettings.com
-   IPv6 Address. . . . . . . . . . . : 2600:1003:a410:107d:b0e7:f7ef:3b3e:4641
-   Temporary IPv6 Address. . . . . . : 2600:1003:a410:107d:3c14:537c:d6c3:aaf9
-   Link-local IPv6 Address . . . . . : fe80::53f9:bdd2:bd02:f75a%16
+   IPv6 Address. . . . . . . . . . . : *****
+   Temporary IPv6 Address. . . . . . : *****
+   Link-local IPv6 Address . . . . . : *****
    IPv4 Address. . . . . . . . . . . : 192.168.1.151
    Subnet Mask . . . . . . . . . . . : 255.255.255.0
    Default Gateway . . . . . . . . . : fe80::aeb6:87ff:feb3:de2b%16
