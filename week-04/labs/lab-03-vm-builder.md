@@ -92,8 +92,7 @@ D2s_v3--> 2 vCPUs · 8 GB RAM · 128 GB disk $0.110/hr
 Your monthly math (rate × 24 × 30):
 
 ```
-$0.110 x 24 x 30 = $7.92
-If it only cost me $7.92 per month I would leave my machine running for a month.
+$0.110 × 24 × 30 = $79.20 per month. I would not leave this machine running for a full month if I was not using it because $79.20 is much more than I originally calculated. I would stop/deallocate the VM when I was finished using it so I would not keep paying the compute cost.
 ```
 
 ### Step 5 — Create the Admin Account
