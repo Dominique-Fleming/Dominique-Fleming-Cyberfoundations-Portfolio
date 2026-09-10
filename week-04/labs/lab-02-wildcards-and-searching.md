@@ -72,7 +72,8 @@ ls inv-*march*
 Output (the matched files — and nothing extra):
 
 ```
-ls inv-*march*
+inv-march-supplement.txt
+inv-march.txt
 ```
 
 ### Step 4 — Act on a Pattern
@@ -84,7 +85,7 @@ Commands you ran (mkdir, cp with pattern, confirming ls):
 ```
 mkdir evidence
 cp inv-*march* evidence
-ls
+ls evidence
 ```
 
 ---
