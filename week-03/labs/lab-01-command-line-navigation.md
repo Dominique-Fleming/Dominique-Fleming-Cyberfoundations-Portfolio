@@ -187,7 +187,7 @@ Basically it is looking for things that are similar or have a pattern if there a
 Look at the path `pwd` (or `Get-Location`) printed in Part A, Step 1. Is it written in Windows style or Linux style, and how do you know? Reference at least one specific detail from Lesson 2 (a drive letter, a slash direction, or the presence of a ~) to support your answer.
 
 ```
-The path that the command "pwd" shows is written in Linux. I know because it doesn't have a root starting with letters; just starting with "/" which is the one and only root for Linux. Also unlike the Windows(BASH) Linux(Powershell) doesnt have random symbols in its pathway (IE-(BASH) /home/morgan$)). Linux path was simply "/home/morgan/.SO to sum it up Powershell has no letter to start its pathway, uses "/" and no additional symbols in the pathway.
+The path that pwd shows is written in Linux style. I know because the lab uses Bash, and the path starts with /, which is the root in Linux. It also uses forward slashes / instead of the backslashes \ used in Windows paths. For example, /home/morgan is a Linux-style path, while a Windows path would normally start with a drive letter like C:\.
 ```
 
 ### Analysis Question 2
