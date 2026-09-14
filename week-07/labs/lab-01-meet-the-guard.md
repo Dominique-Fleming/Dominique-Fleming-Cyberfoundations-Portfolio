@@ -35,9 +35,9 @@ A network security rule is a decision about traffic. Rules are evaluated from th
 
 - [x] The VM shows **Running**.
 
-- [ ] I can identify the four protected baseline rules at priorities 100, 110, 120, and 1000.
+- [x] I can identify the four protected baseline rules at priorities 100, 110, 120, and 1000.
 
-- [ ] I understand that my editable priority range is 200–999.
+- [x] I understand that my editable priority range is 200–999.
 
 ### Cloud Heights Idle Stop
 
