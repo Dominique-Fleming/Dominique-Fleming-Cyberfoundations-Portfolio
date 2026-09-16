@@ -248,8 +248,7 @@ In Lab 01, `foundry-archive.grid.local` gave you exactly one address: `10.20.5.2
 How many addresses came back, and what they were:
 
 ```
-104.16.133.229
-104.16.132.229
+Two public IP addresses were returned. *** & ***
 ```
 
 ### Step 3 — Reason About Why
@@ -296,7 +295,7 @@ Look carefully at your screenshot from Part B, Step 5 and at anything you plan t
 What you found in your own output that needs covering — list each item:
 
 ```
-The username in your shell prompt and Any ISP name
+I found information that needed to be covered, including any public IP addresses, my computer hostname, my username, and any ISP-identifying names shown in the traceroute.
 ```
 
 ### Step 2 — Cover It Properly
@@ -318,7 +317,7 @@ Two methods, both built into your operating system. **You are not installing an 
 Which method you used and what you covered:
 
 ```
-Paint: choose the filled-rectangle shape, set the fill to a solid colour, and draw it over the text.
+I used Paint with solid filled rectangles to completely cover the public IP addresses, identifying hostname, username, and ISP-identifying traceroute names.
 ```
 
 ### Step 3 — Re-Read Your Own Worksheet
@@ -330,7 +329,7 @@ Where a private local address like `192.168.1.14` is fine to publish (it means n
 What you changed in your typed answers, if anything:
 
 ```
-the IPv6 address on hop 1 and on question 3
+I reviewed my typed answers and removed or redacted any public IP addresses, identifying hostnames, usernames, and ISP-identifying traceroute information before publishing the lab.
 ```
 
 ### Step 4 — Pre-Flight Checklist
@@ -374,7 +373,7 @@ A traceroute can show me the path my traffic takes and which routers respond alo
 **Analysis Question 3.** Part D asked you to decide what was safe to publish. Walk through your own judgement: what did you choose to hide, what did you judge safe to leave visible, and how did you decide where the line was? Name one thing you deliberately left in and explain why it was safe. *(Minimum 4 sentences.)*
 
 ```
-I chose to hide anything that could point back to my personal network or location, like identifying network details. I left the traceroute hops and public IP addresses visible because they are part of the route across the internet and do not directly identify my private setup. I decided the line based on whether the information was personal/private to me or just normal public network-routing information. I deliberately left the `* * *` timeout hops visible because they do not expose personal information and they help show what the traceroute actually did.
+I chose to hide anything that could identify my personal network or location, including public IP addresses, identifying hostnames, my username, and ISP-identifying traceroute names. I kept the technical parts of the traceroute visible when they did not reveal identifying information. I decided what was safe based on whether the information was needed to prove what I learned without exposing unnecessary personal or network details. I deliberately left the * * * timeout hops visible because they do not identify me and they help show how the traceroute behaved.
 ```
 
 ---
