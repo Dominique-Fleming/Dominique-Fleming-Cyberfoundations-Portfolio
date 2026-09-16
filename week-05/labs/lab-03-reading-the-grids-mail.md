@@ -57,7 +57,7 @@ Scan the **Protocol** column from top to bottom and write down every distinct pr
 The protocols that appear in this capture:
 
 ```
-DVS, ICMP, TCP, TLS, HTTP
+DNS, ICMP, TCP, TLS, HTTP
 ```
 
 ### Step 3 — Read the Columns
