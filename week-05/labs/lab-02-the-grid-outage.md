@@ -157,7 +157,7 @@ There are two separate things happening in a ping, and this output separates the
 Did the name turn into an IP address — and if so, which one? Then: what did the packet loss say?
 
 ```
-The name did turn into an ip address: 10.20.5.30. The packet loss says the name failed.
+The name did turn into an ip address: 10.20.5.30. The packet loss says 100% of the packets were lost, meaning none of the ping requests received a reply.
 ```
 
 ### Step 3 — Ask DNS Directly
