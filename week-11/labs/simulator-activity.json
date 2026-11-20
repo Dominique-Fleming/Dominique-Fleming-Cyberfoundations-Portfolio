@@ -1,0 +1,951 @@
+{
+  "source": "LIVE — your simulated activity (fictional)",
+  "signins": [
+    {
+      "id": "LS-194ECC-1-1",
+      "raw": {
+        "user": "blair@cvi-training.example",
+        "reason": "accepted",
+        "outcome": "success",
+        "event_id": "LS-194ECC-1-1",
+        "time_utc": "2026-09-28T13:01:00Z",
+        "device_id": "managed-blair",
+        "source_ip": "192.0.2.11",
+        "mfa_detail": "challenged_now",
+        "application": "CaseDesk",
+        "correlation_id": "LC-194ECC-1",
+        "scenario_location": "Office-A",
+        "authentication_method": "password_plus_mfa"
+      },
+      "seq": 1,
+      "account": "cl-blair"
+    },
+    {
+      "id": "LS-194ECC-7-1",
+      "raw": {
+        "user": "alex@cvi-training.example",
+        "reason": "accepted",
+        "outcome": "success",
+        "event_id": "LS-194ECC-7-1",
+        "time_utc": "2026-09-28T13:07:00Z",
+        "device_id": "managed-alex",
+        "source_ip": "192.0.2.10",
+        "mfa_detail": "challenged_now",
+        "application": "CaseDesk",
+        "correlation_id": "LC-194ECC-7",
+        "scenario_location": "Office-A",
+        "authentication_method": "password_plus_mfa"
+      },
+      "seq": 7,
+      "account": "cl-alex"
+    },
+    {
+      "id": "LS-194ECC-25-1",
+      "raw": {
+        "user": "finley@cvi-training.example",
+        "reason": "ACCOUNT_DISABLED",
+        "outcome": "failure",
+        "event_id": "LS-194ECC-25-1",
+        "time_utc": "2026-09-28T13:25:00Z",
+        "device_id": "managed-finley",
+        "source_ip": "192.0.2.14",
+        "mfa_detail": "not_recorded",
+        "application": "CaseDesk",
+        "correlation_id": "LC-194ECC-25",
+        "scenario_location": "Office-A",
+        "authentication_method": "password"
+      },
+      "seq": 25,
+      "account": "cl-finley"
+    },
+    {
+      "id": "LS-194ECC-28-1",
+      "raw": {
+        "user": "finley@cvi-training.example",
+        "reason": "ACCOUNT_DISABLED",
+        "outcome": "failure",
+        "event_id": "LS-194ECC-28-1",
+        "time_utc": "2026-09-28T13:28:00Z",
+        "device_id": "managed-finley",
+        "source_ip": "192.0.2.14",
+        "mfa_detail": "not_recorded",
+        "application": "CaseDesk",
+        "correlation_id": "LC-194ECC-28",
+        "scenario_location": "Office-A",
+        "authentication_method": "password"
+      },
+      "seq": 28,
+      "account": "cl-finley"
+    }
+  ],
+  "audits": [
+    {
+      "id": "LA-194ECC-2-2",
+      "seq": 2,
+      "time": "2026-09-28T13:02:00Z",
+      "after": {
+        "mode": "current-access",
+        "test": "AT-194ECC-2-1",
+        "action": "read",
+        "account": "cl-blair",
+        "reasons": [
+          "NO_MATCHING_GRANT"
+        ],
+        "decision": "deny"
+      },
+      "before": null,
+      "result": "accepted",
+      "target": "R-CASE",
+      "ticket": null,
+      "changed": [],
+      "activity": "access_test",
+      "actorKind": "learner",
+      "targetType": "resource",
+      "correlation": "LC-194ECC-2"
+    },
+    {
+      "id": "LA-194ECC-3-1",
+      "seq": 3,
+      "time": "2026-09-28T13:03:00Z",
+      "after": [
+        "GC-JUN",
+        "GC-READ"
+      ],
+      "before": [
+        "GC-JUN"
+      ],
+      "reason": "T201 / APP-201 — Approved read-only access to Case Summaries for cl-blair. Adding Blair to Case-Readers (GC-READ) to grant case: read only.",
+      "result": "accepted",
+      "target": "cl-blair",
+      "ticket": "T201",
+      "changed": [
+        "memberships"
+      ],
+      "activity": "group_member_added",
+      "actorKind": "learner",
+      "targetType": "account",
+      "correlation": "LC-194ECC-3"
+    },
+    {
+      "id": "LA-194ECC-4-2",
+      "seq": 4,
+      "time": "2026-09-28T13:04:00Z",
+      "after": {
+        "mode": "current-access",
+        "test": "AT-194ECC-4-1",
+        "action": "read",
+        "account": "cl-blair",
+        "reasons": [
+          "ALLOW"
+        ],
+        "decision": "allow"
+      },
+      "before": null,
+      "result": "accepted",
+      "target": "R-CASE",
+      "ticket": null,
+      "changed": [],
+      "activity": "access_test",
+      "actorKind": "learner",
+      "targetType": "resource",
+      "correlation": "LC-194ECC-4"
+    },
+    {
+      "id": "LA-194ECC-5-2",
+      "seq": 5,
+      "time": "2026-09-28T13:05:00Z",
+      "after": {
+        "mode": "current-access",
+        "test": "AT-194ECC-5-1",
+        "action": "update",
+        "account": "cl-blair",
+        "reasons": [
+          "NO_MATCHING_GRANT"
+        ],
+        "decision": "deny"
+      },
+      "before": null,
+      "result": "accepted",
+      "target": "R-CASE",
+      "ticket": null,
+      "changed": [],
+      "activity": "access_test",
+      "actorKind": "learner",
+      "targetType": "resource",
+      "correlation": "LC-194ECC-5"
+    },
+    {
+      "id": "LA-194ECC-6-1",
+      "seq": 6,
+      "time": "2026-09-28T13:06:00Z",
+      "after": "resolved",
+      "before": "open",
+      "reason": "I added Blair (cl-blair) to the Case-Readers group to give her read-only access to Case Summaries, as approved in APP-201. I checked her access before and after the change. The retests showed ALLOW for read (AT-194ECC-4-1) and DENY for update (AT-194ECC-5-1). This confirms Blair has the access she needs without getting editing permissions.",
+      "result": "accepted",
+      "target": "T201",
+      "ticket": "T201",
+      "changed": [
+        "status"
+      ],
+      "activity": "ticket_resolved",
+      "actorKind": "learner",
+      "targetType": "ticket",
+      "correlation": "LC-194ECC-6"
+    },
+    {
+      "id": "LA-194ECC-8-2",
+      "seq": 8,
+      "time": "2026-09-28T13:08:00Z",
+      "after": {
+        "mode": "current-access",
+        "test": "AT-194ECC-8-1",
+        "action": "read",
+        "account": "cl-alex",
+        "reasons": [
+          "ALLOW"
+        ],
+        "decision": "allow"
+      },
+      "before": null,
+      "result": "accepted",
+      "target": "R-QUEUE",
+      "ticket": null,
+      "changed": [],
+      "activity": "access_test",
+      "actorKind": "learner",
+      "targetType": "resource",
+      "correlation": "LC-194ECC-8"
+    },
+    {
+      "id": "LA-194ECC-9-2",
+      "seq": 9,
+      "time": "2026-09-28T13:09:00Z",
+      "after": {
+        "mode": "current-access",
+        "test": "AT-194ECC-9-1",
+        "action": "export",
+        "account": "cl-alex",
+        "reasons": [
+          "NO_MATCHING_GRANT"
+        ],
+        "decision": "deny"
+      },
+      "before": null,
+      "result": "accepted",
+      "target": "R-AUD",
+      "ticket": null,
+      "changed": [],
+      "activity": "access_test",
+      "actorKind": "learner",
+      "targetType": "resource",
+      "correlation": "LC-194ECC-9"
+    },
+    {
+      "id": "LA-194ECC-10-1",
+      "seq": 10,
+      "time": "2026-09-28T13:10:00Z",
+      "after": "DEP-AUD",
+      "before": "DEP-RESP",
+      "result": "accepted",
+      "target": "P01",
+      "ticket": "T502",
+      "changed": [
+        "department"
+      ],
+      "activity": "department_changed",
+      "actorKind": "learner",
+      "targetType": "person",
+      "correlation": "LC-194ECC-10"
+    },
+    {
+      "id": "LA-194ECC-10-2",
+      "seq": 10,
+      "time": "2026-09-28T13:10:00Z",
+      "after": "DEP-AUD",
+      "before": "DEP-RESP",
+      "result": "accepted",
+      "target": "ad-alex",
+      "ticket": "T502",
+      "changed": [
+        "department"
+      ],
+      "activity": "department_changed",
+      "actorKind": "learner",
+      "targetType": "account",
+      "correlation": "LC-194ECC-10"
+    },
+    {
+      "id": "LA-194ECC-10-3",
+      "seq": 10,
+      "time": "2026-09-28T13:10:00Z",
+      "after": "DEP-AUD",
+      "before": "DEP-RESP",
+      "result": "accepted",
+      "target": "cl-alex",
+      "ticket": "T502",
+      "changed": [
+        "department"
+      ],
+      "activity": "department_changed",
+      "actorKind": "learner",
+      "targetType": "account",
+      "correlation": "LC-194ECC-10"
+    },
+    {
+      "id": "LA-194ECC-11-1",
+      "seq": 11,
+      "time": "2026-09-28T13:11:00Z",
+      "after": [
+        "GA-ALL"
+      ],
+      "before": [
+        "GA-ALL",
+        "GA-RESP"
+      ],
+      "reason": "T502 / APP-502 — Alex transferred from Response to Audit. Update his department in HR and both directories, remove old Response access, add approved Audit access, and retain staff handbook access.",
+      "result": "accepted",
+      "target": "ad-alex",
+      "ticket": "T502",
+      "changed": [
+        "memberships"
+      ],
+      "activity": "group_member_removed",
+      "actorKind": "learner",
+      "targetType": "account",
+      "correlation": "LC-194ECC-11"
+    },
+    {
+      "id": "LA-194ECC-12-1",
+      "seq": 12,
+      "time": "2026-09-28T13:12:00Z",
+      "after": [
+        "GA-ALL",
+        "GA-AUD"
+      ],
+      "before": [
+        "GA-ALL"
+      ],
+      "reason": "T502 / APP-502 — Alex transferred from Response to Audit. Update his department in HR and both directories, remove old Response access, add approved Audit access, and retain staff handbook access.",
+      "result": "accepted",
+      "target": "ad-alex",
+      "ticket": "T502",
+      "changed": [
+        "memberships"
+      ],
+      "activity": "group_member_added",
+      "actorKind": "learner",
+      "targetType": "account",
+      "correlation": "LC-194ECC-12"
+    },
+    {
+      "id": "LA-194ECC-13-1",
+      "seq": 13,
+      "time": "2026-09-28T13:13:00Z",
+      "after": {
+        "dn": "CN=Alex Morgan,OU=Audit,OU=Staff,DC=ad,DC=cloudheights,DC=example",
+        "ou": "OU-AUD"
+      },
+      "before": {
+        "dn": "CN=Alex Morgan,OU=Response,OU=Staff,DC=ad,DC=cloudheights,DC=example",
+        "ou": "OU-RESP"
+      },
+      "reason": "T502 / APP-502 — Alex transferred from Response to Audit. Update his department in HR and both directories, remove old Response access, add approved Audit access, and retain staff handbook access.",
+      "result": "accepted",
+      "target": "ad-alex",
+      "ticket": "T502",
+      "changed": [
+        "ou",
+        "dn"
+      ],
+      "activity": "ou_changed",
+      "actorKind": "learner",
+      "targetType": "account",
+      "correlation": "LC-194ECC-13"
+    },
+    {
+      "id": "LA-194ECC-14-1",
+      "seq": 14,
+      "time": "2026-09-28T13:14:00Z",
+      "after": [],
+      "before": [
+        "GC-RESP"
+      ],
+      "reason": "T502 / APP-502 — Remove Alex's old Response-Operators access after his transfer to Audit.",
+      "result": "accepted",
+      "target": "cl-alex",
+      "ticket": "T502",
+      "changed": [
+        "memberships"
+      ],
+      "activity": "group_member_removed",
+      "actorKind": "learner",
+      "targetType": "account",
+      "correlation": "LC-194ECC-14"
+    },
+    {
+      "id": "LA-194ECC-15-1",
+      "seq": 15,
+      "time": "2026-09-28T13:15:00Z",
+      "after": [
+        "GC-AUD"
+      ],
+      "before": [],
+      "reason": "T502 / APP-502 — Remove Alex's old Response-Operators access after his transfer to Audit.",
+      "result": "accepted",
+      "target": "cl-alex",
+      "ticket": "T502",
+      "changed": [
+        "memberships"
+      ],
+      "activity": "group_member_added",
+      "actorKind": "learner",
+      "targetType": "account",
+      "correlation": "LC-194ECC-15"
+    },
+    {
+      "id": "LA-194ECC-16-2",
+      "seq": 16,
+      "time": "2026-09-28T13:16:00Z",
+      "after": {
+        "mode": "current-access",
+        "test": "AT-194ECC-16-1",
+        "action": "read",
+        "account": "cl-alex",
+        "reasons": [
+          "NO_MATCHING_GRANT"
+        ],
+        "decision": "deny"
+      },
+      "before": null,
+      "result": "accepted",
+      "target": "R-QUEUE",
+      "ticket": null,
+      "changed": [],
+      "activity": "access_test",
+      "actorKind": "learner",
+      "targetType": "resource",
+      "correlation": "LC-194ECC-16"
+    },
+    {
+      "id": "LA-194ECC-17-2",
+      "seq": 17,
+      "time": "2026-09-28T13:17:00Z",
+      "after": {
+        "mode": "current-access",
+        "test": "AT-194ECC-17-1",
+        "action": "export",
+        "account": "cl-alex",
+        "reasons": [
+          "ALLOW"
+        ],
+        "decision": "allow"
+      },
+      "before": null,
+      "result": "accepted",
+      "target": "R-AUD",
+      "ticket": null,
+      "changed": [],
+      "activity": "access_test",
+      "actorKind": "learner",
+      "targetType": "resource",
+      "correlation": "LC-194ECC-17"
+    },
+    {
+      "id": "LA-194ECC-18-1",
+      "seq": 18,
+      "time": "2026-09-28T13:18:00Z",
+      "after": "resolved",
+      "before": "open",
+      "reason": "I updated Alex's department to Audit in HR and both directories, moved his AD account to the Audit OU, removed his old Response groups, and added the approved Audit groups. I kept All-Staff so he could still read the Staff Handbook. I verified that Response Queue read was DENY (AT-194ECC-16-1) and Audit Evidence export was ALLOW (AT-194ECC-17-1). His AD access also shows Staff Handbook read and Audit Share read. Everything matches T502 and APP-502.",
+      "result": "accepted",
+      "target": "T502",
+      "ticket": "T502",
+      "changed": [
+        "status"
+      ],
+      "activity": "ticket_resolved",
+      "actorKind": "learner",
+      "targetType": "ticket",
+      "correlation": "LC-194ECC-18"
+    },
+    {
+      "id": "LA-194ECC-19-1",
+      "seq": 19,
+      "time": "2026-09-28T13:19:00Z",
+      "after": {
+        "status": "disabled",
+        "sessionsRevoked": 0,
+        "securityRevision": 2
+      },
+      "before": {
+        "status": "enabled",
+        "securityRevision": 1
+      },
+      "reason": "T503 / HR-503 — Finley's contract ended. Disable cloud access immediately while preserving account records and audit logs.",
+      "result": "accepted",
+      "target": "cl-finley",
+      "ticket": "T503",
+      "changed": [
+        "status",
+        "securityRevision",
+        "sessions"
+      ],
+      "activity": "account_status_changed",
+      "actorKind": "learner",
+      "targetType": "account",
+      "correlation": "LC-194ECC-19"
+    },
+    {
+      "id": "LA-194ECC-20-1",
+      "seq": 20,
+      "time": "2026-09-28T13:20:00Z",
+      "after": {
+        "sessionsRevoked": 0,
+        "securityRevision": 3
+      },
+      "before": null,
+      "reason": "T503 / HR-503 — Revoke any remaining cloud sessions after Finley's contract ended. Preserve records and logs.",
+      "result": "accepted",
+      "target": "cl-finley",
+      "ticket": "T503",
+      "changed": [
+        "sessions",
+        "securityRevision"
+      ],
+      "activity": "sessions_revoked",
+      "actorKind": "learner",
+      "targetType": "account",
+      "correlation": "LC-194ECC-20"
+    },
+    {
+      "id": "LA-194ECC-21-1",
+      "seq": 21,
+      "time": "2026-09-28T13:21:00Z",
+      "after": {
+        "status": "disabled",
+        "sessionsRevoked": 0,
+        "securityRevision": 2
+      },
+      "before": {
+        "status": "enabled",
+        "securityRevision": 1
+      },
+      "reason": "T503 / HR-503 — Finley's contract ended effective immediately. Disable the AD account while preserving records and logs.",
+      "result": "accepted",
+      "target": "ad-finley",
+      "ticket": "T503",
+      "changed": [
+        "status",
+        "securityRevision",
+        "sessions"
+      ],
+      "activity": "account_status_changed",
+      "actorKind": "learner",
+      "targetType": "account",
+      "correlation": "LC-194ECC-21"
+    },
+    {
+      "id": "LA-194ECC-22-1",
+      "seq": 22,
+      "time": "2026-09-28T13:22:00Z",
+      "after": [
+        "GA-SUP"
+      ],
+      "before": [
+        "GA-ALL",
+        "GA-SUP"
+      ],
+      "reason": "T503 / HR-503 — Remove Finley's remaining staff access following contract termination. Preserve account records and logs.",
+      "result": "accepted",
+      "target": "ad-finley",
+      "ticket": "T503",
+      "changed": [
+        "memberships"
+      ],
+      "activity": "group_member_removed",
+      "actorKind": "learner",
+      "targetType": "account",
+      "correlation": "LC-194ECC-22"
+    },
+    {
+      "id": "LA-194ECC-23-1",
+      "seq": 23,
+      "time": "2026-09-28T13:23:00Z",
+      "after": {
+        "dn": "CN=Finley Ross,OU=Disabled Accounts,DC=ad,DC=cloudheights,DC=example",
+        "ou": "OU-DIS"
+      },
+      "before": {
+        "dn": "CN=Finley Ross,OU=Support,OU=Staff,DC=ad,DC=cloudheights,DC=example",
+        "ou": "OU-SUP"
+      },
+      "reason": "T503 / HR-503 — Move Finley's disabled AD account to Disabled Accounts after removing access. Preserve account records and audit logs.",
+      "result": "accepted",
+      "target": "ad-finley",
+      "ticket": "T503",
+      "changed": [
+        "ou",
+        "dn"
+      ],
+      "activity": "ou_changed",
+      "actorKind": "learner",
+      "targetType": "account",
+      "correlation": "LC-194ECC-23"
+    },
+    {
+      "id": "LA-194ECC-24-1",
+      "seq": 24,
+      "time": "2026-09-28T13:24:00Z",
+      "after": [],
+      "before": [
+        "GC-READ"
+      ],
+      "reason": "T503 / HR-503 — Remove Finley's Case-Readers membership following contract termination. Preserve account records and audit logs.",
+      "result": "accepted",
+      "target": "cl-finley",
+      "ticket": "T503",
+      "changed": [
+        "memberships"
+      ],
+      "activity": "group_member_removed",
+      "actorKind": "learner",
+      "targetType": "account",
+      "correlation": "LC-194ECC-24"
+    },
+    {
+      "id": "LA-194ECC-26-1",
+      "seq": 26,
+      "time": "2026-09-28T13:26:00Z",
+      "after": [],
+      "before": [
+        "GA-SUP"
+      ],
+      "reason": "T503 / HR-503 — Remove Finley's remaining Support-Team membership following contract termination. Preserve account records and audit logs.",
+      "result": "accepted",
+      "target": "ad-finley",
+      "ticket": "T503",
+      "changed": [
+        "memberships"
+      ],
+      "activity": "group_member_removed",
+      "actorKind": "learner",
+      "targetType": "account",
+      "correlation": "LC-194ECC-26"
+    },
+    {
+      "id": "LA-194ECC-27-1",
+      "seq": 27,
+      "time": "2026-09-28T13:27:00Z",
+      "after": "resolved",
+      "before": "open",
+      "reason": "I disabled Finley's AD and cloud accounts because his contract ended, as approved in T503 / HR-503. I revoked cloud sessions, removed his group memberships from both directories, and moved his AD account to Disabled Accounts. I confirmed both accounts were disabled, no access grants remained, and his cloud sign-in was blocked because the account was disabled. I kept his accounts and audit records instead of deleting anything.",
+      "result": "accepted",
+      "target": "T503",
+      "ticket": "T503",
+      "changed": [
+        "status"
+      ],
+      "activity": "ticket_resolved",
+      "actorKind": "learner",
+      "targetType": "ticket",
+      "correlation": "LC-194ECC-27"
+    },
+    {
+      "id": "LA-194ECC-29-2",
+      "seq": 29,
+      "time": "2026-09-28T13:29:00Z",
+      "after": {
+        "mode": "current-access",
+        "test": "AT-194ECC-29-1",
+        "action": "read",
+        "account": "cl-alex",
+        "reasons": [
+          "NO_MATCHING_GRANT"
+        ],
+        "decision": "deny"
+      },
+      "before": null,
+      "result": "accepted",
+      "target": "R-ABAC",
+      "ticket": null,
+      "changed": [],
+      "activity": "access_test",
+      "actorKind": "learner",
+      "targetType": "resource",
+      "correlation": "LC-194ECC-29"
+    },
+    {
+      "id": "LA-194ECC-30-2",
+      "seq": 30,
+      "time": "2026-09-28T13:30:00Z",
+      "after": {
+        "mode": "abac-what-if",
+        "test": "AT-194ECC-30-1",
+        "action": "read",
+        "account": "cl-alex",
+        "reasons": [
+          "NO_MATCHING_GRANT"
+        ],
+        "decision": "deny"
+      },
+      "before": null,
+      "result": "accepted",
+      "target": "R-ABAC",
+      "ticket": null,
+      "changed": [],
+      "activity": "access_test",
+      "actorKind": "learner",
+      "targetType": "resource",
+      "correlation": "LC-194ECC-30"
+    },
+    {
+      "id": "LA-194ECC-31-2",
+      "seq": 31,
+      "time": "2026-09-28T13:31:00Z",
+      "after": {
+        "mode": "abac-what-if",
+        "test": "AT-194ECC-31-1",
+        "action": "read",
+        "account": "cl-alex",
+        "reasons": [
+          "NO_MATCHING_GRANT"
+        ],
+        "decision": "deny"
+      },
+      "before": null,
+      "result": "accepted",
+      "target": "R-ABAC",
+      "ticket": null,
+      "changed": [],
+      "activity": "access_test",
+      "actorKind": "learner",
+      "targetType": "resource",
+      "correlation": "LC-194ECC-31"
+    }
+  ],
+  "accessTests": [
+    {
+      "id": "AT-194ECC-2-1",
+      "seq": 2,
+      "mode": "current-access",
+      "paths": [],
+      "action": "read",
+      "device": "managed-blair",
+      "account": "cl-blair",
+      "reasons": [
+        "NO_MATCHING_GRANT"
+      ],
+      "session": "SES-194ECC-1",
+      "decision": "deny",
+      "resource": "R-CASE",
+      "revision": 2,
+      "memberships": [
+        "GC-JUN"
+      ]
+    },
+    {
+      "id": "AT-194ECC-4-1",
+      "seq": 4,
+      "mode": "current-access",
+      "paths": [
+        {
+          "kind": "role",
+          "role": "RL-READ",
+          "group": "GC-READ",
+          "scope": "R-CASE",
+          "assignment": "AS-02"
+        }
+      ],
+      "action": "read",
+      "device": "managed-blair",
+      "account": "cl-blair",
+      "reasons": [
+        "ALLOW"
+      ],
+      "session": "SES-194ECC-1",
+      "decision": "allow",
+      "resource": "R-CASE",
+      "revision": 4,
+      "memberships": [
+        "GC-JUN",
+        "GC-READ"
+      ]
+    },
+    {
+      "id": "AT-194ECC-5-1",
+      "seq": 5,
+      "mode": "current-access",
+      "paths": [],
+      "action": "update",
+      "device": "managed-blair",
+      "account": "cl-blair",
+      "reasons": [
+        "NO_MATCHING_GRANT"
+      ],
+      "session": "SES-194ECC-1",
+      "decision": "deny",
+      "resource": "R-CASE",
+      "revision": 5,
+      "memberships": [
+        "GC-JUN",
+        "GC-READ"
+      ]
+    },
+    {
+      "id": "AT-194ECC-8-1",
+      "seq": 8,
+      "mode": "current-access",
+      "paths": [
+        {
+          "kind": "role",
+          "role": "RL-RESP",
+          "group": "GC-RESP",
+          "scope": "R-QUEUE",
+          "assignment": "AS-03"
+        }
+      ],
+      "action": "read",
+      "device": "managed-alex",
+      "account": "cl-alex",
+      "reasons": [
+        "ALLOW"
+      ],
+      "session": "SES-194ECC-7",
+      "decision": "allow",
+      "resource": "R-QUEUE",
+      "revision": 8,
+      "memberships": [
+        "GC-RESP"
+      ]
+    },
+    {
+      "id": "AT-194ECC-9-1",
+      "seq": 9,
+      "mode": "current-access",
+      "paths": [],
+      "action": "export",
+      "device": "managed-alex",
+      "account": "cl-alex",
+      "reasons": [
+        "NO_MATCHING_GRANT"
+      ],
+      "session": "SES-194ECC-7",
+      "decision": "deny",
+      "resource": "R-AUD",
+      "revision": 9,
+      "memberships": [
+        "GC-RESP"
+      ]
+    },
+    {
+      "id": "AT-194ECC-16-1",
+      "seq": 16,
+      "mode": "current-access",
+      "paths": [],
+      "action": "read",
+      "device": "managed-alex",
+      "account": "cl-alex",
+      "reasons": [
+        "NO_MATCHING_GRANT"
+      ],
+      "session": "SES-194ECC-7",
+      "decision": "deny",
+      "resource": "R-QUEUE",
+      "revision": 16,
+      "memberships": [
+        "GC-AUD"
+      ]
+    },
+    {
+      "id": "AT-194ECC-17-1",
+      "seq": 17,
+      "mode": "current-access",
+      "paths": [
+        {
+          "kind": "role",
+          "role": "RL-AUD",
+          "group": "GC-AUD",
+          "scope": "R-AUD",
+          "assignment": "AS-05"
+        }
+      ],
+      "action": "export",
+      "device": "managed-alex",
+      "account": "cl-alex",
+      "reasons": [
+        "ALLOW"
+      ],
+      "session": "SES-194ECC-7",
+      "decision": "allow",
+      "resource": "R-AUD",
+      "revision": 17,
+      "memberships": [
+        "GC-AUD"
+      ]
+    },
+    {
+      "id": "AT-194ECC-29-1",
+      "seq": 29,
+      "mode": "current-access",
+      "paths": [],
+      "action": "read",
+      "device": "managed-alex",
+      "account": "cl-alex",
+      "reasons": [
+        "NO_MATCHING_GRANT"
+      ],
+      "session": "SES-194ECC-7",
+      "decision": "deny",
+      "resource": "R-ABAC",
+      "revision": 29,
+      "memberships": [
+        "GC-AUD"
+      ]
+    },
+    {
+      "id": "AT-194ECC-30-1",
+      "seq": 30,
+      "mode": "abac-what-if",
+      "paths": [],
+      "action": "read",
+      "device": "managed-alex",
+      "account": "cl-alex",
+      "reasons": [
+        "NO_MATCHING_GRANT"
+      ],
+      "session": "SES-194ECC-7",
+      "decision": "deny",
+      "resource": "R-ABAC",
+      "revision": 30,
+      "overrides": {
+        "department": "DEP-RESP"
+      },
+      "memberships": [
+        "GC-AUD"
+      ]
+    },
+    {
+      "id": "AT-194ECC-31-1",
+      "seq": 31,
+      "mode": "abac-what-if",
+      "paths": [],
+      "action": "read",
+      "device": "managed-alex",
+      "account": "cl-alex",
+      "reasons": [
+        "NO_MATCHING_GRANT"
+      ],
+      "session": "SES-194ECC-7",
+      "decision": "deny",
+      "resource": "R-ABAC",
+      "revision": 31,
+      "overrides": {
+        "department": "DEP-RESP",
+        "deviceTrust": "unmanaged"
+      },
+      "memberships": [
+        "GC-AUD"
+      ]
+    }
+  ]
+}
